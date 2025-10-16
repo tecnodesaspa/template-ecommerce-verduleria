@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fresh Harvest - About Us</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#17cf17",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-800 dark:text-zinc-200">
+    <div class="min-h-screen">
+        <header
+            class="sticky top-0 z-10 border-b border-zinc-200/50 dark:border-zinc-800/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_543)">
+                            <path
+                                d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"
+                                fill="currentColor"></path>
+                            <path clip-rule="evenodd"
+                                d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_543">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fresh Harvest</h1>
+                </div>
+                <nav class="hidden items-center gap-8 text-sm font-medium lg:flex" id="navMenu">
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/">Inicio</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/productos/">Productos</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/nosotros/">Nosotros</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/contacto/">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="/template-ecommerce-verduleria/carrito/"
+                        class="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> shopping_cart </span>
+                        <span
+                            class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">3</span>
+                    </a>
+                    <a href="/template-ecommerce-verduleria/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+                    </a>
+                    <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-4 text-zinc-900 dark:text-white">Sobre Nosotros</h2>
+                <p class="text-lg text-center text-zinc-600 dark:text-zinc-400 mb-12">Nuestra historia, misión y los
+                    valores que nos impulsan cada día.</p>
+                <div class="space-y-12">
+                    <section>
+                        <h3 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Nuestra Historia</h3>
+                        <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                            En Fresh Harvest, nuestra pasión es ofrecerte las frutas y verduras más frescas y de la más
+                            alta calidad. Nuestra historia comenzó con un sueño simple: conectar a las personas con los
+                            sabores puros de la naturaleza. Desde nuestros humildes comienzos, nos hemos dedicado a
+                            cultivar relaciones con agricultores locales que comparten nuestro compromiso con la
+                            sostenibilidad y la excelencia.
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Nuestra Misión</h3>
+                        <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                            Nuestra misión es simple: llevar la frescura del campo directamente a tu mesa. Creemos que
+                            los alimentos más saludables y deliciosos provienen de prácticas agrícolas responsables y de
+                            un profundo respeto por la tierra. Nos esforzamos por ser un puente entre los agricultores y
+                            los consumidores, asegurando que cada producto que ofrecemos cumpla con nuestros estrictos
+                            estándares de calidad y frescura.
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Nuestros Valores</h3>
+                        <ul class="list-disc list-inside space-y-2 text-zinc-700 dark:text-zinc-300">
+                            <li><span class="font-semibold text-zinc-800 dark:text-zinc-200">Frescura:</span>
+                                Priorizamos la frescura por encima de todo, asegurando que nuestros productos se
+                                cosechen en su punto óptimo y se entreguen con rapidez.</li>
+                            <li><span class="font-semibold text-zinc-800 dark:text-zinc-200">Calidad:</span>
+                                Seleccionamos cuidadosamente cada producto, buscando solo aquellos que cumplan con
+                                nuestros altos estándares de sabor, apariencia y valor nutricional.</li>
+                            <li><span class="font-semibold text-zinc-800 dark:text-zinc-200">Sostenibilidad:</span>
+                                Apoyamos prácticas agrícolas sostenibles que protegen el medio ambiente y promueven la
+                                salud a largo plazo de nuestras comunidades.</li>
+                            <li><span class="font-semibold text-zinc-800 dark:text-zinc-200">Transparencia:</span>
+                                Creemos en la transparencia total, desde el origen de nuestros productos hasta los
+                                métodos que utilizamos para llevarlos a tu mesa.</li>
+                            <li><span class="font-semibold text-zinc-800 dark:text-zinc-200">Comunidad:</span> Nos
+                                dedicamos a construir relaciones sólidas con nuestros agricultores, clientes y la
+                                comunidad en general, fomentando un sentido de confianza y colaboración.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="text-2xl font-bold text-center mb-8 text-zinc-900 dark:text-white">Conoce a Nuestro
+                            Equipo</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto rounded-full bg-cover bg-center mb-4"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxSxzGTrN1XfAWwCG_G4N_rs_EV8AOR4TzwUDObEkEZzJ7MQU06Y3krxtX-QZrdxlNVydPIAqqtcExqOKIn-c_8sn_bfWGM19dBbO2mwsyXGvDjNAIlS4gK2DJtcf2cZ77e564d-pG8sGUVdmObT_Q9X52w56scG67K2CjxBaKFo0F5sU5muyzdNokPkgJ7LwMDbpFBTTK5lFoUl-X4nBLeXvM0IY7NiCGUNWxa4MrybNtHvTIATloBHPtMyDdFYk6MAn5L1M2mZQ");'>
+                                </div>
+                                <h4 class="font-bold text-lg text-zinc-900 dark:text-white">María García</h4>
+                                <p class="text-primary">Fundadora y CEO</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto rounded-full bg-cover bg-center mb-4"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbgja-43jdX0t7lTmIBeiM_KjEpmO5YSs122whNyq7sOLopipg6SspVsdKRoai1uu_h8RMwgfvDEvU-xV3U-wV-lHQh7w84Un-VLiTBgz8CWCsKTq4aYfF4yys5IBCQ_kVipt1PPKhafm_TYN6H3CuchOv-IRqhMnSgCQauHk-vtT6nKWJARj26wICjmMWXfMczUEnqVsbv8dVUmOmN2o1oRYFOvCzeBsBHOx01EWX3d0ugYvA0M0TlPJFHcf4ZVpmMEGWjZh-h0I");'>
+                                </div>
+                                <h4 class="font-bold text-lg text-zinc-900 dark:text-white">Carlos López</h4>
+                                <p class="text-primary">Gerente de Operaciones</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto rounded-full bg-cover bg-center mb-4"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3F2cnb4PF-1y-CnYi7WAGHvdW5FoknckfrQDrMOz0ipQld7i0i5hRkqcK4qgTn5PoAT6SfIOF0JGkdCBxM5uWFKRHWtr_uLecpZpM808s4AW8fn-DLjZvn0m16hd2z3m7cZbJYlceyciGlryZoLyvuOzRDR844FTPN3XfUOKUZfU22_zE7N7XgbICOFJ1z6qBFUYUMk6VBy1-oUZHpPHU7c8msdlVApEiLnR1p4pOGW1Ub5cQpcT3tWoQMKoR7NGvhKQhXt6_M7U");'>
+                                </div>
+                                <h4 class="font-bold text-lg text-zinc-900 dark:text-white">Sofía Martínez</h4>
+                                <p class="text-primary">Jefa de Ventas</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="text-2xl font-bold text-center mb-8 text-zinc-900 dark:text-white">Nuestros Productos
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="aspect-square bg-cover bg-center rounded-lg"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFReSRhuriMxMSurQ8izNL43JrRgLF76QK5QVzVvFio3UEZEcuCcKLHk6F3YUNJ1RCgYMxZNI2-Y-84D4rF7WWSJSmhg7jE4ydWzwMJfvzFqRNzQ3qbZbFQfyRDXBHSVDMqFn-y4qHMe8Cr2QW9dXXwW1PbdJrQJaga_aWMYfvAGQcLen6WtdOuQ-TsNm22kh9CNNsJMgBu-ob6Zjiozc5bNVSjsrow1ekfPKz7G4BWdmGNWFU6geD7Sgwe0ZsVQRPJwmPh6UTD7g");'>
+                            </div>
+                            <div class="aspect-square bg-cover bg-center rounded-lg"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkp2LMCwT8CaWjCLZuIJ2OKD5eA-UrzhPmaVXhytyEKHGp9tqlPzlJkV2OB7k6EJbd2F8Lv4sSJ3LcQhDh1Q9nJbJ5EWMShJusZFn7-TcNNTaXVsWdaw1fvgc9oGgqpX_SQIz9IIKm9xRtauGL28mELaUz5_t-4QJMGnRXsvhltNtZ8Zz-dVh_xSHe7_IAgZUiJEW8ZKOfwXDY003XPExmZiz5wbEmZV1GwMFYS028tZ98QLhp-UsY-lQYiF72Jbi1Ivn_5pRCtug");'>
+                            </div>
+                            <div class="aspect-square bg-cover bg-center rounded-lg"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9SaZXXyAIbzcrQnAuJz3M7gdqV4D40mngfli8gfMSOksv4iYPtisxLAMT31-quU_MWUk201_WZcsH8s21Aw0lhUujbcOV3wUkjFZTqRaA-QF966ojgpk0jZkxbndHzY4qd_Gfxm453N5aDEO0aXGr4A9F1mpQKvbfP3HyXheSB_PXpAAaslwuiNrVyLmXA-TmsgWaVjISEsugxxornscS1cpcX0tyMAJTi_3cnUd7QT6nD-PvNdEEf1uLHpw1dZY6Ti1FMQX4fc8");'>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="text-2xl font-bold text-center mb-8 text-zinc-900 dark:text-white">Testimonios</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div
+                                class="bg-background-light dark:bg-background-dark border border-zinc-200 dark:border-zinc-800 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full bg-cover bg-center mr-4"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9H4hT_OeRJZ7jdb5VU6TA4B2uyrMRnYlQDXX0wrnqR79rB8T8O-Xd6bC89ttCMgnEhVZixDvT488b8m0pS03CEF12Y-N2VFORrc1WbizoPdiVBuT1hoLRoyAzvnIliZ2PXxmf__n6wEybsQT39Cib2Vp_LJm8Tu-LIrWXc6zu3vuD66Qu0IhSMzNcPhe3NvtL4N2hxBfV_V71zsUHsKpbSQdvr_fGATiFuciNsW9b9G9v1vL4nxXZx19qhYlhEV_YJtybIoWi2WU");'>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-zinc-900 dark:text-white">Ana Rodríguez</p>
+                                        <p class="text-sm text-zinc-500 dark:text-zinc-400">Hace 2 semanas</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-2">
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                                <p class="text-zinc-700 dark:text-zinc-300">"Me encanta la frescura y calidad de los
+                                    productos de Fresh Harvest. Siempre encuentro lo que necesito y el sabor es
+                                    incomparable."</p>
+                            </div>
+                            <div
+                                class="bg-background-light dark:bg-background-dark border border-zinc-200 dark:border-zinc-800 p-6 rounded-lg">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 rounded-full bg-cover bg-center mr-4"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAU4cbaBWStbbj1GJeDETaXzam2Wjw5jGowL0ygyhueJFjxZoBUfZcto4TGfq5YHBUSyhOXf1fI1kpG8ZV0e4H0d4DZE86JxxSCbWS3kOyXlBHwEuvk69LWdDnFiiFEq3xdqkOq6I5O3RlfmYmY5uR_kAGIxDljel89hBSX7pGUQ4A51jmKDYMH2OABdl-RHfRkBZdXGUQjun-zTF8ACE2vIz7oZjfrn9gj0JuPH7odhs3m26COaRYXsM7D9PbpCaOw970NaRN2dno");'>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-zinc-900 dark:text-white">Juan Pérez</p>
+                                        <p class="text-sm text-zinc-500 dark:text-zinc-400">Hace 1 mes</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-2">
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-primary" data-icon="Star" data-size="20px" data-weight="fill"><svg
+                                            fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="text-zinc-300 dark:text-zinc-600" data-icon="Star" data-size="20px"
+                                        data-weight="fill"><svg fill="currentColor" height="20px" viewBox="0 0 256 256"
+                                            width="20px" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                                <p class="text-zinc-700 dark:text-zinc-300">"Fresh Harvest es mi lugar favorito para
+                                    comprar frutas y verduras. La variedad es excelente y el servicio siempre es
+                                    amable."</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="border-t border-zinc-200/50 dark:border-zinc-800/50 bg-background-light dark:bg-background-dark">
+            <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
+                    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+                        <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+                            href="/template-ecommerce-verduleria/politicas/">Política de
+                            Privacidad</a>
+                        <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+                            href="/template-ecommerce-verduleria/terminos/">Términos de
+                            Servicio</a>
+                        <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+                            href="/template-ecommerce-verduleria/contacto/">Contacto</a>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <p class="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">© 2025 Templates Market. Todos los
+                    derechos
+                    reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

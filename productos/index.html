@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fresh Harvest - Product Catalog</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#17cf17",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header
+            class="sticky top-0 z-10 border-b border-zinc-200/50 dark:border-zinc-800/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_543)">
+                            <path
+                                d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"
+                                fill="currentColor"></path>
+                            <path clip-rule="evenodd"
+                                d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_543">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fresh Harvest</h1>
+                </div>
+                <nav class="hidden items-center gap-8 text-sm font-medium lg:flex" id="navMenu">
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/">Inicio</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/productos/">Productos</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/nosotros/">Nosotros</a>
+                    <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+                        href="/template-ecommerce-verduleria/contacto/">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="/template-ecommerce-verduleria/carrito/"
+                        class="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> shopping_cart </span>
+                        <span
+                            class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">3</span>
+                    </a>
+                    <a href="/template-ecommerce-verduleria/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+                    </a>
+                    <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <aside class="lg:w-1/4">
+                    <div class="space-y-8 sticky top-28">
+                        <div>
+                            <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Categorías</h2>
+                            <div class="space-y-2">
+                                <a class="flex items-center justify-between px-3 py-2 rounded-lg bg-primary/10 dark:bg-primary/20 text-gray-900 dark:text-white font-semibold"
+                                    href="#">Frutas <span class="text-xs text-primary">(12)</span></a>
+                                <a class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                                    href="#">Verduras <span class="text-xs">(23)</span></a>
+                                <a class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                                    href="#">Orgánicos <span class="text-xs">(8)</span></a>
+                                <a class="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                                    href="#">Ofertas <span class="text-xs">(5)</span></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Ordenar por</h2>
+                            <select
+                                class="form-select w-full rounded-lg border-primary/20 dark:border-primary/40 bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary">
+                                <option>Popularidad</option>
+                                <option>Precio: bajo a alto</option>
+                                <option>Precio: alto a bajo</option>
+                                <option>Más recientes</option>
+                            </select>
+                        </div>
+                    </div>
+                </aside>
+                <div class="lg:w-3/4">
+                    <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Nuestros Productos</h1>
+                        <div class="relative sm:hidden w-full">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400">search</span>
+                            <input
+                                class="form-input w-full rounded-full border-0 bg-primary/10 dark:bg-primary/20 pl-10 pr-4 py-2 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark"
+                                placeholder="Buscar productos..." type="search" />
+                        </div>
+                    </div>
+                    <section>
+                        <h3
+                            class="text-2xl font-bold mb-4 pb-2 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                            Frutas</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPwoxDn3hgXUTt6fAW86lhuOVGXjcj30ffRIur__qScQUhgK2fXk8FfYGE56cC1rrp7syEkh0-l5qn_KGxuorWPjeZSFyPxn9za0x7SvuNenlQx8DErAMWc8OmrmwUsdcCxxA4Z1hwhVPHnznQp4xvGdbCac9we8qJlVZ8aZvAblOZ3kQGUzSScVdXEOsMANgztDGlID_D_g_UmvZAO8olARXCgTKKfWpWOjTwFbymfWAfOgHVJprrfZozCFakEA_0NI_QXWek1zo");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Manzanas</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.99/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9Xz_xFJHPqkdA63DwjcUfr2ct3img8zAcRCJHoiVe1Co97MOJ1ukz30Bw3lDWhPjIR0fRUS9POw723qYbG6P67P7lBYnrTMzrq-pDMG8yjC7R9b4YpxNicWACC1foARLgDUcv-FkrUnMrqlVwpLEu66rk7mRZRNkAmKuZcO8m3x0jBFRXcvqVtGwsXIvZgPO0h8XNhl5oBrknDqF-qPWZORH8DM-uSv-N6nhbk1B-1aOIJ9lRBbLEUkZwS-DxnA2pStxxjJQEvR8");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Bananas</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.49/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCneaYoTOkbKgSmeLz_SHu08Wi3Uo7YxUWon0QgW5IRob44UjwTaVDaS4ys8m48K71Y6fdR117lncK99ySeNnf1fm1ErMMEq_NHrxbvxHrfpHlusgGyvDuREbEMvc04shbot8bW3x2cCiydikf4UG9u9eC40fW6W6S2jter2uH348QATK0Jc-V2WE4EE2bpm4iARBGxky0qY6S6xZW_n-tY5D6Bw4iMcB0oNiRUt0uuY_9MiDsuNh24DgyJHLI3GiFfPG7Yl-mXy8");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Naranjas</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.99/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFag1ucCE8hH31Ot6_lPBHPdUlUYHlZw-zpo3Tv7M1sEJ4ItHOIs-I7lOV_QJj6yTtz2LbomUoUPTVAJ0UM-cosvhOf0GuFayqtzbaeemywif8HgIYsyAAaotOYKY2DccNBGG2TVfSnNkz8OzNh7_UQeL1g0riFVXKwnq6FDJc0DYXpCsbCKV9u4Of2lwyciy6225muqmSTw3MEDOQI3nJ4YT0xiOzi4PeFWCnWpzq5zMp9eQoM_gh7tGz25jsXlIQiMQ0t2jUopg");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Uvas</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.49/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mt-12">
+                        <h3
+                            class="text-2xl font-bold mb-4 pb-2 border-b border-primary/20 dark:border-primary/30 text-gray-900 dark:text-white">
+                            Verduras</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDh0EhCgvGmL3hO1cMeqTQ086EpFRrsjPerIkt8QSy_Z2WHzNlywrVvD4cb1rVQudv-QemgAf74h_kTok8T1Pws-e-rHogVIIus39o_NqANgGiCOvCWO5sJ3p8ilCknzPmkrpEOCUI3ZCyxvE4_Fx1gSuj20YJ4bFa5lR4pAT7r1r7lcoVLXi6mmlbSjHV4lYQBYrXagyt0PA7yLrIH2tC23_JoIj9Kyu9L0KIW9ZxctsDbsLpH2n9p1MrtHStw3Mco7GxHxIWsILE");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Tomates</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.99/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDT3B64J46C2y8Eyai34LxEcWBi0qGhgLU2wQiy4fn0gVNO9pVdadVkG7rIfnpb3DIsAv8hhQiOMbjYiyLxXipG9iO-xcDnXOS64g_3HKxnYb8JzcdSDFiVnUSitZveHVJAXEfrLsQJfxQ0d38ixZUtoxV6Zvx1fK0pWU_06APOG-Xy6jTRFMvVHrGQIzsGOOCy43_vobzyPLjvyidtLda-Ch1cn5II3p1WV4MqHdQMRhBlgOZCeGmg2PSysegEXF2hn79RzwteFdQ");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Lechuga</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.49/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmsN4pfpsXrgiwU5K5y0-YKWT-2dmGF6ez1DJXBz_VOG844a7OwJ_kiDmGcYVsEfvndbLC6cdmW6_3VJlugKxYsWk5GYY5pBTnlog5Um4HV4MTGrFQNfD7IqerfqiZpQZuj2QcjH1x27cyBsL-GG6ke8xpR91V_9QixnKpS8Xzz9p10EviTtbfKfrdWgQ8-TfobEN_k9VexXC6kphTTMplnMVneCcfCSUF0Uk7N2HU0o3Xz2-uEM-Qp4vZ5iCxVmJfm1rQzw0KdS4");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Zanahorias</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.79/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                            <div
+                                class="group relative flex flex-col rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-background-dark border border-primary/10 dark:border-primary/20">
+                                <div name="item" class="pointer w-full h-40 bg-cover bg-center"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcE_VLKBwZGiOX7XlhsGeSQ2rAezXWvr6swuXE57nkfvLGkRGWt6gRDYp3l08C0g5u_8M6GvzCQ03-_R6RR4WCTR3lqiG8M6KzpucxYrlta2N97UtS6yQBNiiB1uoeFgLrmfsARVSuw4jtkaVzasy4eZhQpf-yCBbF6kirPdUEC4c-lLZ_pqdirAF1EGFpgYOeAk8mnb2-T6PZ5GsZsTb-Q0wzeLe7D352eliH9bCdRbsBhQLM0zXV_HKzdTEpXmxRbT6ItyxgC9w");'>
+                                </div>
+                                <div class="p-4 flex-grow">
+                                    <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Pimientos</h4>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.99/kg</p>
+                                </div>
+                                <button
+                                    class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                    al carrito</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+        document.getElementsByName("item").forEach(item => {
+            item.addEventListener("click", () => {
+                window.location.href = "/template-ecommerce-verduleria/detalle-producto/";
+            });
+        });
+    </script>
+</body>
+
+</html>

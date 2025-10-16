@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Fresh Harvest</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#17cf17",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112111",
+          },
+          fontFamily: {
+            display: ["Work Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <style>
+    .bg-hero-pattern {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNZ2GbfSHEupGalnthxj26LreruPvd59mC08Xq3eCPhyzwrJx2pDKiNtTL4zdSdphsNw0fanm2SyZnN2ZwGIiaPse-GpURigSYafahv3O5S7w9yZ0qnuspumv3-ck7KLiULwE07S3TrY8FyyrGKHRloSqR_GEj7fOdtHXYwsbTD9rFoq3EV2iCAIPhx-1NrVRcwrqkANrKoPnerXJ85zqiazfZORZoOusIQ9ChwUUvsqxdd3JC-YUoJhnBeC0jcV01H_w1KIkpAgg");
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-800 dark:text-zinc-200">
+  <div class="flex min-h-screen w-full flex-col">
+    <header
+      class="sticky top-0 z-10 border-b border-zinc-200/50 dark:border-zinc-800/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_543)">
+              <path
+                d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"
+                fill="currentColor"></path>
+              <path clip-rule="evenodd"
+                d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_543">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">Fresh Harvest</h1>
+        </div>
+        <nav class="hidden items-center gap-8 text-sm font-medium lg:flex" id="navMenu">
+          <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary" href="/template-ecommerce-verduleria/">Inicio</a>
+          <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+            href="/template-ecommerce-verduleria/productos/">Productos</a>
+          <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+            href="/template-ecommerce-verduleria/nosotros/">Nosotros</a>
+          <a class="text-zinc-700 hover:text-primary dark:text-zinc-300 dark:hover:text-primary"
+            href="/template-ecommerce-verduleria/contacto/">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="/template-ecommerce-verduleria/carrito/"
+            class="relative p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> shopping_cart </span>
+            <span
+              class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">3</span>
+          </a>
+          <a href="/template-ecommerce-verduleria/perfil/" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHzYqeT0bWXoXqaStv2LZSlVN2EOtQt5lJFM-YjpJAa5qsfcsGj4P2E1BztyiU4u8QWbIOYllmeajTx_7ni_-B2PNcBbzXTmn-wdMPKto_bY6ID-Jze42U80CWQgeCHjML5qF4UJe3kwLXYcBEDB8MS4eMXVlEL8-yqlR0KV9TCv-WoSqiP7Xhr1iTIggjIgEn2s8j5uCEMSzDjA2_i8X4T4ikqOioxDwSCdJ64LFjLjjV6aLjsg0nCOepR3Krgueqjht4dit-Z1qs");'>
+          </a>
+          <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="relative bg-hero-pattern bg-cover bg-center py-32 sm:py-48">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-4xl font-black text-white drop-shadow-lg sm:text-6xl">De la Granja a tu Mesa</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-white/90 drop-shadow-md">Disfruta de la frescura y calidad de
+            nuestros productos directamente de los campos a tu hogar.</p>
+          <button id="btnExplore"
+            class="mt-8 rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">Explorar
+            Productos</button>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="mb-8 text-3xl font-bold tracking-tight text-center text-zinc-900 dark:text-white">Destacados de la
+            Semana</h2>
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="group overflow-hidden rounded-lg bg-white dark:bg-zinc-900/50 shadow-md transition-shadow hover:shadow-xl">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBbh6NRkSxWpAbt1yig-1shBbOdAOBIAE74NRdORe1BvxsG9ySo6EtgqTMOHi7FyKJY491Wq7DeSL_rpRiU_0SqHLWSAykBx-j2fDnfc9cutT4RFvofLcLeGCiXIlUuBscuhm_Vk6Rc8KzHYSmNy4afjoKWl0m3aW65gBluOi1rVvdHHNck1W0dmOFbM4lPEqNWQwWDa4aikpXKX3RzQrCtfnj6BXGBq8wRUIxL2tw1Z5pLFsHola56EMYyu7gUpZAhvPd1cmmaOI")'>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Tomates Orgánicos</h3>
+                <p class="text-sm text-primary">Cultivados sin pesticidas</p>
+              </div>
+            </div>
+            <div
+              class="group overflow-hidden rounded-lg bg-white dark:bg-zinc-900/50 shadow-md transition-shadow hover:shadow-xl">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDe0HLt3b_xZwvug45dTqWXVdeH04AXDVtLgSAve_y3ztajPrirs2JsXk0IKU9k21jtM8IfOPMLMAUExN6bXXctAqvvP-7UDVMzhKwdlufRTRSrjDxfZvGecqy5EeT92h43ZrCDQ1V1LJBhNyhQTdjY5zTDHKflsYIT_l7Cd69oytiuWonJwn42OpdajRdz-exIT8ZFsHmn3nydYiBGVsrJLa8gJP84croxfe86qCpSKCZc1aSXZKtO_I3b90DHcPJAm0-7yEBPerc")'>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Lechuga Fresca</h3>
+                <p class="text-sm text-primary">Recién cosechada</p>
+              </div>
+            </div>
+            <div
+              class="group overflow-hidden rounded-lg bg-white dark:bg-zinc-900/50 shadow-md transition-shadow hover:shadow-xl">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-4rCRB1N_tWRDeRyICF7dAz1IR3orpTG1oLZi1uNQpwD5OIrlvWMxS8fnxzTa6IYzdtkOBX7dS496K3IMM3czK3tFMAnnEMBtQVw_8PQNkBdtR_Ps04Yz66T2raPN6IbLYDzYLxhuL156hHYZIwPk6_XB6kEejFWzN2YQelKBtwZKzLkArbgU6sQs_sxggxUz1t4CJml1y5Dd6xa2p1KIRovn6sOfmQzWN-6vrYI6Z9QfOXE3FD_ZlZ3_qlm5vIH8zOOrrX75zXE")'>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Naranjas Jugosas</h3>
+                <p class="text-sm text-primary">Ricas en vitamina C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-background-light py-16 dark:bg-zinc-900/30 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="mb-8 text-3xl font-bold tracking-tight text-center text-zinc-900 dark:text-white">Productos de
+            Temporada</h2>
+          <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+            <div class="text-center group">
+              <div
+                class="relative aspect-square w-full overflow-hidden rounded-full shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div class="h-full w-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1YwZFTUXELgGbY53JebBux2lazGlYdvh_UOf8zH8NjT_T__tMvDvmfclVeacju13smhWqNGHTdzKfZ9D-npvvYaZEwVhxSc1dD1HJJET_VcOif2Xxbw0ey8GifGUxqan-M6sTSH0IcJQ9scigBhpjrZg0aaZXgiSYUWzQCtDA8xPiJKFBxDm4KLBPbPaqjgzXYILn4MgcM6gqB0Sn2nNGngn4hnj8Li7jF0e8TuQpa-D2VhSToiR2Qw6oOrQrIHVDcHKqwyZDZs4")'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Fresas</h3>
+                <p class="text-sm text-primary">Dulces y jugosas</p>
+              </div>
+            </div>
+            <div class="text-center group">
+              <div
+                class="relative aspect-square w-full overflow-hidden rounded-full shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div class="h-full w-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBU53QK5kGsXWLm3kqs6R9glkIT23MoZR70p8o0Ays7bVeuu_rJppfFhaJTlJulMBSHtnEsm4hsnV4d-pstTRvwiK3zEpfDunuzWyRmExgcCfbdGItwQvz9MBRrjL80xb9mAM5fHEACxE7B0f3r3U8zakzQcyZbRtjRcs4jXT_cpgWC-Y47y9qFWANgtVv_etsUPLmT2VNIHjt_umJz84hc7wsbkQG1HXtW4EOzQtEcEMbdd9B4wN-3VNutDVFOQVKDWaFnBaYSfTk")'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Espárragos</h3>
+                <p class="text-sm text-primary">Tiernos y frescos</p>
+              </div>
+            </div>
+            <div class="text-center group">
+              <div
+                class="relative aspect-square w-full overflow-hidden rounded-full shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div class="h-full w-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBJOrBkwCjZ-CKpreqyUK-wifCgZBeF4wgMLOrJ-YeQczxNa2lXNbLMAmM9X43F-ogw4kdxoXhyTMsx4LFvEuRGu9e-S6qz0kN_BcR-nikWprXwHxPHhu-s6RtxBsX0BU3D9Bs3_QD_0j8Cn_E_QCF_KGFnUEGNl-D6snukGad-dlINvs58-YeZP5WdW0vM6_ihM9YbWwTzQaGwCHPtyUKXF-OmjJ7xeyw6wTkKrhdT1IYScsdvILOwIQHYWITTjEVGjUryfq1pWw")'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Melocotones</h3>
+                <p class="text-sm text-primary">Maduros y deliciosos</p>
+              </div>
+            </div>
+            <div class="hidden text-center group sm:block">
+              <div
+                class="relative aspect-square w-full overflow-hidden rounded-full shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div class="h-full w-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNZ2GbfSHEupGalnthxj26LreruPvd59mC08Xq3eCPhyzwrJx2pDKiNtTL4zdSdphsNw0fanm2SyZnN2ZwGIiaPse-GpURigSYafahv3O5S7w9yZ0qnuspumv3-ck7KLiULwE07S3TrY8FyyrGKHRloSqR_GEj7fOdtHXYwsbTD9rFoq3EV2iCAIPhx-1NrVRcwrqkANrKoPnerXJ85zqiazfZORZoOusIQ9ChwUUvsqxdd3JC-YUoJhnBeC0jcV01H_w1KIkpAgg")'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Pimientos</h3>
+                <p class="text-sm text-primary">Crujientes y coloridos</p>
+              </div>
+            </div>
+            <div class="hidden text-center group lg:block">
+              <div
+                class="relative aspect-square w-full overflow-hidden rounded-full shadow-lg transition-transform duration-300 group-hover:-translate-y-2">
+                <div class="h-full w-full bg-cover bg-center"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBbh6NRkSxWpAbt1yig-1shBbOdAOBIAE74NRdORe1BvxsG9ySo6EtgqTMOHi7FyKJY491Wq7DeSL_rpRiU_0SqHLWSAykBx-j2fDnfc9cutT4RFvofLcLeGCiXIlUuBscuhm_Vk6Rc8KzHYSmNy4afjoKWl0m3aW65gBluOi1rVvdHHNck1W0dmOFbM4lPEqNWQwWDa4aikpXKX3RzQrCtfnj6BXGBq8wRUIxL2tw1Z5pLFsHola56EMYyu7gUpZAhvPd1cmmaOI")'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-bold text-zinc-900 dark:text-white">Zanahorias</h3>
+                <p class="text-sm text-primary">Dulces y nutritivas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-zinc-200/50 dark:border-zinc-800/50 bg-background-light dark:bg-background-dark">
+      <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center gap-6 text-center md:flex-row md:justify-between">
+          <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+            <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+              href="/template-ecommerce-verduleria/politicas/">Política de
+              Privacidad</a>
+            <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+              href="/template-ecommerce-verduleria/terminos/">Términos de
+              Servicio</a>
+            <a class="text-zinc-600 hover:text-primary dark:text-zinc-400 dark:hover:text-primary"
+              href="/template-ecommerce-verduleria/contacto/">Contacto</a>
+          </div>
+          <div class="flex justify-center gap-4">
+            <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                </path>
+              </svg>
+            </a>
+            <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                </path>
+              </svg>
+            </a>
+            <a class="text-zinc-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">© 2025 Templates Market. Todos los derechos
+          reservados.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="./main.js"></script>
+  <script>
+    document.getElementById('btnExplore').addEventListener('click', () => {
+      window.location.href = '/template-ecommerce-verduleria/productos/';
+    });
+  </script>
+</body>
+
+</html>
