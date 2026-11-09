@@ -29,6 +29,28 @@
     };
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
@@ -105,7 +127,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCokfG9EoHpfBI0I2-T0DOBKVcpyU6sECRrlOSfMDuo-1Q9VBcIvAyKxyaqwEk-pMguvMcEXiw0YFum_nfWv7pl1wm5Y9WIw5ouOLNf6gNCCDRiU5aLAP2aLDF01B5qJW7gLk0Eu-mq2bevGRTOHhvTNJ36IbEEaQCQVnf5Sfuj8w4EO2zfIVkXN5x_SgQm4Dqx_6OV9MJWtlHCdsgqnzJOPh33vV9g6yZdEtnnqpa7mupQa8f9XKezbPzyJpGyirC3XOczTDZIvzc" />
                       <div>
                         <p class="font-semibold">Manzanas</p>
-                        <p class="text-xs text-gray-500 dark:text-gray-400">$2.50/kg</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">$2.500/kg</p>
                       </div>
                     </div>
                   </th>
@@ -118,8 +140,8 @@
                           class="material-symbols-outlined text-base">add</span></button>
                     </div>
                   </td>
-                  <td class="px-6 py-4 text-right">$2.50</td>
-                  <td class="px-6 py-4 text-right font-semibold">$5.00</td>
+                  <td class="px-6 py-4 text-right">$2.500</td>
+                  <td class="px-6 py-4 text-right font-semibold">$5.000</td>
                   <td class="px-6 py-4 text-right">
                     <button
                       class="p-1 text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors"><span
@@ -133,7 +155,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP5GEP3kMhUcwiy9rFzxEQJXsNHnAtHOOrgicgnEUeKxoi43IDVqVMpHJsU0q7P4psHaFMFp1OfeyUa9hQ0dCWCyBb5wBCn_sWRJYWcR-0kTHq7Rpo7eJX3VtrhHWxdqv-DYi55w-6NZmX87D16s7hGUGFRh4S_waJxdEnd7oNNxdGjtHYZp_z5_ETia2SNxhLvguAT6kXzcIfbX16zNXryzQdgOgdUSth-XsGjKE41v9gI8eX3uqSUs1CSu8C3lko9h6_sWzeNNI" />
                       <div>
                         <p class="font-semibold">Plátanos</p>
-                        <p class="text-xs text-gray-500 dark:text-gray-400">$1.20/kg</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">$1.200/kg</p>
                       </div>
                     </div>
                   </th>
@@ -146,8 +168,8 @@
                           class="material-symbols-outlined text-base">add</span></button>
                     </div>
                   </td>
-                  <td class="px-6 py-4 text-right">$1.20</td>
-                  <td class="px-6 py-4 text-right font-semibold">$1.80</td>
+                  <td class="px-6 py-4 text-right">$1.200</td>
+                  <td class="px-6 py-4 text-right font-semibold">$1.800</td>
                   <td class="px-6 py-4 text-right">
                     <button
                       class="p-1 text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors"><span
@@ -161,7 +183,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT9oM6wt4wOMKkqOporVhyCXeHTOf6Li8-BmU1nN-a5s0uNAjGT_ZffMDKWUGMYG8DLo2kJojDFn5tUSSIuaduAtN565Fcuumq6Du9h99b36lUHNu2k06YskF1Yp7dIsnuQ53YAa3GG-tOqzlaHnAlRtU0w207sIcEQtdTXtJrrarvpQTS-sc_-dqJAK7KbVimhLBJwKYM7178Y8fA7Pe0i_PmSmNtcsNowvXygckGoBAsC-FRPAs-u02jATdqNF2RmFhGQAAYPcY" />
                       <div>
                         <p class="font-semibold">Tomates</p>
-                        <p class="text-xs text-gray-500 dark:text-gray-400">$3.00/kg</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">$3.000/kg</p>
                       </div>
                     </div>
                   </th>
@@ -174,8 +196,8 @@
                           class="material-symbols-outlined text-base">add</span></button>
                     </div>
                   </td>
-                  <td class="px-6 py-4 text-right">$3.00</td>
-                  <td class="px-6 py-4 text-right font-semibold">$3.00</td>
+                  <td class="px-6 py-4 text-right">$3.000</td>
+                  <td class="px-6 py-4 text-right font-semibold">$3.000</td>
                   <td class="px-6 py-4 text-right">
                     <button
                       class="p-1 text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors"><span
@@ -194,20 +216,20 @@
               <div class="space-y-2">
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Subtotal</span>
-                  <span class="font-medium text-gray-800 dark:text-gray-200">$9.80</span>
+                  <span class="font-medium text-gray-800 dark:text-gray-200">$9.800</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Envío</span>
-                  <span class="font-medium text-gray-800 dark:text-gray-200">$2.00</span>
+                  <span class="font-medium text-gray-800 dark:text-gray-200">$2.000</span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Impuestos</span>
-                  <span class="font-medium text-gray-800 dark:text-gray-200">$0.50</span>
+                  <span class="font-medium text-gray-800 dark:text-gray-200">$500</span>
                 </div>
                 <div class="border-t border-gray-200 dark:border-gray-700 my-2"></div>
                 <div class="flex justify-between font-bold text-lg">
                   <span class="text-gray-900 dark:text-white">Total</span>
-                  <span class="text-gray-900 dark:text-white">$12.30</span>
+                  <span class="text-gray-900 dark:text-white">$12.300</span>
                 </div>
               </div>
               <a href="/template-ecommerce-verduleria/pago/"

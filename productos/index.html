@@ -47,6 +47,28 @@
             cursor: pointer;
         }
     </style>
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
@@ -155,7 +177,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Manzanas</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.99/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.990/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -168,7 +190,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Bananas</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.49/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.490/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -181,7 +203,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Naranjas</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.99/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.990/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -194,7 +216,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Uvas</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.49/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.490/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -214,7 +236,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Tomates</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.99/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$3.990/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -227,7 +249,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Lechuga</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.49/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.490/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -240,7 +262,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Zanahorias</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.79/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$1.790/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
@@ -253,7 +275,7 @@
                                 </div>
                                 <div class="p-4 flex-grow">
                                     <h4 class="text-base font-semibold text-gray-800 dark:text-gray-100">Pimientos</h4>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.99/kg</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">$2.990/kg</p>
                                 </div>
                                 <button
                                     class="w-full bg-primary text-white font-bold py-2 px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir

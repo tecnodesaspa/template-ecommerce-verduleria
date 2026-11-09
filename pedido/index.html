@@ -51,6 +51,28 @@
                 'opsz' 24
         }
     </style>
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-display">
@@ -128,7 +150,7 @@
                                         <p class="text-sm text-foreground-light/70 dark:text-foreground-dark/70">2 kg
                                         </p>
                                     </div>
-                                    <p class="font-semibold">$4.00</p>
+                                    <p class="font-semibold">$4.000</p>
                                 </div>
                                 <div class="p-6 flex items-center space-x-4">
                                     <img alt="Plátanos" class="w-20 h-20 rounded-lg object-cover"
@@ -138,7 +160,7 @@
                                         <p class="text-sm text-foreground-light/70 dark:text-foreground-dark/70">1 kg
                                         </p>
                                     </div>
-                                    <p class="font-semibold">$2.50</p>
+                                    <p class="font-semibold">$2.500</p>
                                 </div>
                                 <div class="p-6 flex items-center space-x-4">
                                     <img alt="Tomates" class="w-20 h-20 rounded-lg object-cover"
@@ -148,7 +170,7 @@
                                         <p class="text-sm text-foreground-light/70 dark:text-foreground-dark/70">0.5 kg
                                         </p>
                                     </div>
-                                    <p class="font-semibold">$1.75</p>
+                                    <p class="font-semibold">$1.750</p>
                                 </div>
                             </div>
                         </div>
@@ -173,16 +195,16 @@
                             <div class="space-y-3">
                                 <div class="flex justify-between text-sm">
                                     <p class="text-foreground-light/70 dark:text-foreground-dark/70">Subtotal</p>
-                                    <p>$8.25</p>
+                                    <p>$8.250</p>
                                 </div>
                                 <div class="flex justify-between text-sm">
                                     <p class="text-foreground-light/70 dark:text-foreground-dark/70">Gastos de Envío</p>
-                                    <p>$2.00</p>
+                                    <p>$2.000</p>
                                 </div>
                                 <div class="border-t border-subtle-light dark:border-subtle-dark my-3"></div>
                                 <div class="flex justify-between font-bold text-lg">
                                     <p>Total</p>
-                                    <p>$10.25</p>
+                                    <p>$10.250</p>
                                 </div>
                             </div>
                         </div>

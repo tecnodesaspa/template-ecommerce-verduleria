@@ -49,6 +49,28 @@
                 'opsz' 24
         }
     </style>
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
@@ -121,7 +143,7 @@
                 <div class="flex flex-col gap-6">
                     <div>
                         <h1 class="text-3xl md:text-4xl font-bold tracking-tight">Manzanas Rojas</h1>
-                        <p class="text-2xl font-semibold text-primary mt-2">$2.99/kg</p>
+                        <p class="text-2xl font-semibold text-primary mt-2">$2.990/kg</p>
                     </div>
                     <div class="space-y-4">
                         <p class="text-base">Manzanas rojas crujientes y jugosas, cultivadas localmente en huertos
@@ -153,7 +175,7 @@
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsTZtGIbUiugqzWZ4Com5ZtP1PBYExiC0Dw5FUvKGknfhahIanx56VdIgJ6EKmHjcNMoFOmFFupI5j-Z2-DUClgLpPtbb2b-ZSjKTUI8wIrpfVuSLPbpFyBMipFnQa9qaO6aB7-9S_WjHN_9oR3BgVEiEqooOC7QgUy2xKmat3dWGhikrTHEDgdmr432bSCnEB9ddt_m64LrkpPvI15lseW_k3fdAnNjiXPVbtclIgfw1hqPhNTGzkF_2Zxq0r36vg7toi1ZDTH08" />
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-text-light dark:text-text-dark">Peras Verdes</h3>
-                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$2.49/kg</p>
+                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$2.490/kg</p>
                     </div>
                     <div class="group">
                         <div
@@ -164,7 +186,7 @@
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-text-light dark:text-text-dark">Bananas Amarillas
                         </h3>
-                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$1.99/kg</p>
+                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$1.990/kg</p>
                     </div>
                     <div class="group">
                         <div
@@ -175,7 +197,7 @@
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-text-light dark:text-text-dark">Naranjas Jugosas
                         </h3>
-                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$2.79/kg</p>
+                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$2.790/kg</p>
                     </div>
                     <div class="group">
                         <div
@@ -185,7 +207,7 @@
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR3muiJNhhZMX8OonDzZhypIW089qbHvmcEY6cUA5PXbTRhIw1k2nWz-UI4vIerV-WVz71SPAuwm--EfsAeQMX97815-Jfe9gZenM14h0UPxWL4PhWz-dyqkpMXDzWPSSnWebKAyJLz9ZfVI-beLzCpW9mwJpyyt5uv443Ybm2YCulLd90VzWw6oTUJ8Hi4kAgc7sXiLih9bI7HblyyRD4TIVa0xAQf493GdcO8VtSCelakYc7fvOXDE5-xnt9h9-YDHOHyilnqDc" />
                         </div>
                         <h3 class="mt-4 text-base font-semibold text-text-light dark:text-text-dark">Uvas Frescas</h3>
-                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$3.49/kg</p>
+                        <p class="mt-1 text-sm text-accent-light dark:text-accent-dark">$3.490/kg</p>
                     </div>
                 </div>
             </div>
